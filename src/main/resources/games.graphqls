@@ -1,0 +1,14 @@
+scalar DateTime
+scalar JSON
+
+type Game {
+    schedule: String
+    symbol: String,
+    startDate: DateTime,
+    createdAt: DateTime,
+    deletedAt: DateTime
+}
+
+type Query {
+    games(secureOnly: Boolean = false): [Game]
+}
